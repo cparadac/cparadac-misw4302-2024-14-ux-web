@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SafeUrl } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,9 @@ export class LoginComponent implements OnInit {
   public myAngularxQrCode: string = '';
   public qrCodeDownloadLink: SafeUrl = "";
 
-  constructor() { 
+  constructor(
+    private router: Router
+  ) { 
     this.myAngularxQrCode = 'Your QR code data string';
   }
 
@@ -21,4 +24,7 @@ export class LoginComponent implements OnInit {
     this.qrCodeDownloadLink = url;
   }
 
+  onMouseEnter() {
+    this.router.navigate(['/alarms']);
+  }
 }

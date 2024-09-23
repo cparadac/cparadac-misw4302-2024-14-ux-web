@@ -6,6 +6,8 @@ const routes: Routes = [
     path: '',
     children: [
       {
+        path: 'alarms',
+        loadChildren: () => import('./alarms/alarms.module').then(m => m.AlarmsModule),
       },
     ],
   }
