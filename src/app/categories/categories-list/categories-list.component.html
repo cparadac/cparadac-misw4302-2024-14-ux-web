@@ -1,5 +1,50 @@
-<p>
-  categories works!
-</p>
-
-<app-clocks [index]="0"></app-clocks>
+<div id="wrapper">
+  <main class="container-fluid">
+    <div class="container">
+      <div class="row category_item_row">
+        <div class="col-12 col-md-3" style="padding-left: 60px;">
+          <div class="row">
+            <span class="subtitulos_web">Icono</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 text-center">
+          <div class="row">
+            <span class="subtitulos_web">Nombre</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <div class="row">
+            <span class="subtitulos_web">Descripción</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-2"></div>
+      </div>
+      <div *ngFor="let category of categories" class="row category_item_row">
+        <div class="col-12 col-md-3 align-self-center">
+          <app-clocks
+            [index]="category.id"
+            [style]="category.clock_style"
+          ></app-clocks>
+        </div>
+        <div class="col-12 col-md-3 align-self-center">
+          <div class="row">
+            <span class="descripciones_web">{{ category.name }}</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 align-self-center">
+          <div class="row">
+            <span class="descripciones_web">{{ category.description }}</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-2 align-self-center">
+          <button class="btn btn-save" (click)="edit()">
+            Editar
+          </button>
+          <button class="btn btn-save _btn_delete">
+            Eliminar
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
