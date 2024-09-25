@@ -1,11 +1,28 @@
-:root{
-    --negro-app: #212121
-    --negro-app-20: #B3B3B3
-}/* You can add global styles to this file, and also import other style files */
+:root {
+    --blanco-app: #F5F5F5;
+    --negro-app: #212121;
+    --negro-app-20: #B3B3B3;
+    --negro-app-40: #8E8E8E;
 
-html, body { height: 100%; }
-body { 
-    margin: 0; 
+    --negro-app-80: #4F4F4F;
+    --dorado-app-20: #D7CBB6;
+    --dorado-app-40: #E5C998;
+
+    --azul-primario-app: #2196F3;
+
+    --azul-oscuro-app: #1665C0;
+    --azul-oscuro-app-80: #337EDB;
+}
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     background-image: url(assets/images/fondo_full_large.png)
 }

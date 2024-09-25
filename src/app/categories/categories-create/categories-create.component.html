@@ -1,13 +1,48 @@
 <div class="container text-center">
-  <h2>Crear Categoría</h2>
-  <div class="row">
-    <div class="col align-self-start">
+  <div class="row justify-content-center">
+    <div class="col-auto text-cenetr">
+      <span class="title">Crear Categoría</span>
+      <div class="reloj">
+        <app-clocks [index]="0"></app-clocks>
+      </div>
     </div>
-    <div class="col align-self-center">
-      <app-clocks [index]="0"></app-clocks>
-      <app-clocks [index]="1"></app-clocks>
+  </div>
+
+  <div class="row justify-content-center row_main_form">
+    <div class="col-auto">
+      <div class="row row_form">
+        <div class="col-4 text-center">
+          <span class="txts">Nombre</span>
+        </div>
+        <div class="col-8">
+          <input
+            type="text"
+            class="form-control input_form text_style"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+      </div>
+      <div class="row row_form row_form_second">
+        <div class="col-4 text-center">
+          <span class="txts">Descripción</span>
+        </div>
+        <div class="col-8">
+          <textarea class="form-control text_area_form text_style" aria-label="With textarea"></textarea>
+        </div>
+      </div>
     </div>
-    <div class="col align-self-end">
+  </div>
+
+  <div class="row justify-content-center row_main_form">
+    <div class="col-auto">
+      <div class="row row_form">
+        <div class="col-6">
+          <button type="button" class="btn btn-save">Guardar</button>
+        </div>
+        <div class="col-6">
+        <button type="button" class="btn btn-cancel">Cancelar</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
