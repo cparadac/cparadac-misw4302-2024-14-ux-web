@@ -1,5 +1,6 @@
 :root{
     --negro-app: #212121
+    --negro-app-20: #B3B3B3
 }/* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }

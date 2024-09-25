@@ -1,8 +1,26 @@
-<nav class="navbar navbar-expand-lg bd-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/alarms">Inicio</a>
-    <a class="navbar-brand" routerLink="/alarms">Mis Alarmas</a>
-    <a class="navbar-brand" routerLink="/categories">Mis Categorias</a>
-    <a class="navbar-brand" routerLink="/login">Salir</a>
+    <a class="navbar-brand" routerLink="/alarms">
+      <img src="/assets/images/icono.png" alt="Inicio" class="icon_home">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link txt_titles" [ngClass]="router.url.includes('alarms') ? 'txt_titles_active' : ''" routerLink="/alarms">Mis Alarmas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link txt_titles" [ngClass]="router.url.includes('categories') ? 'txt_titles_active' : ''" routerLink="/categories">Mis Categorias</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <a class="navbar-brand exit" routerLink="/login">
+          <img src="/assets/images/exit_to_app.png" alt="Salir" class="exit_icon">
+          <span class="exit_to_home">Salir</span>
+        </a>
+      </span>
+    </div>
   </div>
 </nav>
