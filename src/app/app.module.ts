@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
+import { ClocksModule } from './components/clocks/clocks.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { QRCodeModule } from 'angularx-qrcode';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavbarModule,
     BrowserAnimationsModule,
     QRCodeModule,
+    ClocksModule,
     AppRoutingModule
   ],
   providers: [
