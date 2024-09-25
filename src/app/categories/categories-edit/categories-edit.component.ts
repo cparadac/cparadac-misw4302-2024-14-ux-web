@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-categories-edit',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesEditComponent implements OnInit {
 
-  constructor() { }
+  public category = {
+    id: 1,
+    name: 'Deportes',
+    description: 'Actividades para mantenerse en forma',
+    clock_style: '2',  
+  }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
     console.log('CategoriesEditComponent initialized');
+  }
+
+  save() {
+    this.router.navigate(['/categories']);
+  }
+
+  cancel() {
+    this.router.navigate(['/categories']);
   }
 }

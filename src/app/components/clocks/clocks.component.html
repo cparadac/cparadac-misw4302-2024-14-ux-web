@@ -1,12 +1,12 @@
 <div id="carouselRelojs_{{index}}" class="carousel slide carousel-fade reloj_carousel">
   <div class="carousel-inner reloj_inner">
-    <div class="carousel-item active">
+    <div class="carousel-item" [ngClass]="style === '1' ? 'active' : ''">
       <img src="/assets/images/reloj_basic.png" class="d-block w-100" alt="Reloj Clásico">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" [ngClass]="style === '2' ? 'active' : ''">
       <img src="/assets/images/reloj_sport.png" class="d-block w-100" alt="Reloj Sport">
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" [ngClass]="style === '3' ? 'active' : ''">
       <img src="/assets/images/reloj_smart.png" class="d-block w-100" alt="Reloj Smart">
     </div>
   </div>
