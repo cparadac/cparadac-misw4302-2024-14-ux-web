@@ -1,4 +1,4 @@
-<app-navbar *ngIf="router.url !== '/login' && router.url !== '/'"></app-navbar>
+<app-navbar *ngIf="!router.url.includes('/login') && router.url !== '/'"></app-navbar>
 
 <div id = "wrapper">
   <main class="container-fluid">

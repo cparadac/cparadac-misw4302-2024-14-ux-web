@@ -66,7 +66,7 @@ export class LoginLoaderComponent implements OnInit {
       await this.delay(700);
     }
     
-    this.router.navigate(['/']);
+    this.router.navigate(['/alarms']);
   }
 
   delay(ms: number) {
