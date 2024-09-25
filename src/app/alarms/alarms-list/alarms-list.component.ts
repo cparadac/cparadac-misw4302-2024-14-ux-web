@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-alarms',
@@ -53,9 +54,17 @@ validateDay(day:any, alarmDays: string[]) {
   return alarmDays.includes(day.id);
 }
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     console.log('AlarmsListComponent initialized');
+  }
+
+  create () {
+    this.router.navigate(['/alarms/create']);
+  }
+
+  edit () {
+    this.router.navigate(['/alarms/edit']);
   }
 }

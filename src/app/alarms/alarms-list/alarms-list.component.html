@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="col-12 col-md-2">
-            <button class="btn btn-edit" id="alarm_edit_button">Editar</button>
+            <button class="btn btn-edit" id="alarm_edit_button" (click)="edit()">Editar</button>
             <button class="btn btn-delete" id="alarm_edit_button">Eliminar</button>
         </div>
       </div>
@@ -69,10 +69,14 @@
           </div>
         </div>
         <div class="col-12 col-md-2">
-          <button class="btn btn-edit" id="alarm_edit_button">Editar</button>
+          <button class="btn btn-edit" id="alarm_edit_button" (click)="edit()">Editar</button>
           <button class="btn btn-delete" id="alarm_edit_button">Eliminar</button>
         </div>
       </div>
     </div>
   </main>
+
+  <div class="float_add">
+    <button class="btn btn-save btn-add" (click)="create()"></button>
+  </div>
 </div>
