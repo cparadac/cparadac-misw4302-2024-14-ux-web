@@ -1,6 +1,7 @@
+<app-navbar *ngIf="router.url !== '/login' && router.url !== '/'"></app-navbar>
+
 <div id = "wrapper">
   <main class="container-fluid">
-    <app-login></app-login>
+    <router-outlet/>
   </main>
 </div>
-<router-outlet/>

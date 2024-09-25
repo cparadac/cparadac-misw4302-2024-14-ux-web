@@ -13,11 +13,11 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private router: Router
-  ) { 
-    this.myAngularxQrCode = 'Your QR code data string';
-  }
+  ) { }
 
   ngOnInit() {
+    console.log('LoginComponent initialized');
+    this.myAngularxQrCode = 'Your QR code data string';
   }
 
   onChangeURL(url: SafeUrl) {

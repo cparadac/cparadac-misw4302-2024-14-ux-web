@@ -3,19 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarModule } from './navbar/navbar.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { LoginComponent } from './login/login.component';
-import { QRCodeModule } from 'angularx-qrcode';
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
   ],
   imports: [
     BrowserModule,
-    QRCodeModule,
+    NavbarModule,
     AppRoutingModule
   ],
   providers: [

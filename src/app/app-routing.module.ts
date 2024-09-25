@@ -6,8 +6,20 @@ const routes: Routes = [
     path: '',
     children: [
       {
+        path: '',
+        loadChildren: () => import('./login/login.module').then(m => m.LoginModule),
+      },
+      {
+        path: 'login',
+        loadChildren: () => import('./login/login.module').then(m => m.LoginModule),
+      },
+      {
         path: 'alarms',
         loadChildren: () => import('./alarms/alarms.module').then(m => m.AlarmsModule),
+      },
+      {
+        path: 'categories',
+        loadChildren: () => import('./categories/categories.module').then(m => m.CategoriesModule),
       },
     ],
   }
