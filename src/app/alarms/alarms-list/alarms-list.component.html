@@ -1,3 +1,78 @@
-<p>
-  alarms works!
-</p>
+<div id="wrapper">
+  <main class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <h1 class="subtitulos_web" id="titulo_login">Próximas</h1>
+      </div>
+      <div *ngFor="let alarm of alarms['earlies']" class="row" id="alarm_item_row">
+        <div class="col-12 col-md-3">
+          <p class="descripciones_web" id="alarm_category">{{alarm.category}}</p>
+          <app-clocks id="clock_component"></app-clocks>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="row">
+            <h2 class="subtitulos_web" id="alarm_title">{{alarm.title}}</h2>
+          </div>
+          <div class="row">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="alarm_switch" checked>
+            </div>
+          </div>
+          <div class="row">
+            <h3 class="etiqueta_web" id="alarm_hour_label">{{alarm.hour_label}}</h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="row">
+            <p> {{alarm.days}} </p>
+          </div>
+          <div class="row">
+            <p class="descripciones_web" id="alarm_description"> {{alarm.description}} </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-2">
+            <button class="btn btn-primary btn-lg" id="alarm_edit_button">Editar</button>
+            <button class="btn btn-primary btn-lg" id="alarm_edit_button">Eliminar</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <h1 class="subtitulos_web" id="titulo_login">Siguientes</h1>
+      </div>
+
+      <div *ngFor="let alarm of alarms['nexts']" class="row" id="alarm_item_row">
+        <div class="col-12 col-md-3">
+          <p class="descripciones_web" id="alarm_category">{{alarm.category}}</p>
+          <app-clocks id="clock_component"></app-clocks>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="row">
+            <h2 class="subtitulos_web" id="alarm_title">{{alarm.title}}</h2>
+          </div>
+          <div class="row">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="alarm_switch" checked>
+            </div>
+          </div>
+          <div class="row">
+            <h3 class="etiqueta_web" id="alarm_hour_label">{{alarm.hour_label}}</h3>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="row">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            </div>
+            <p> {{alarm.days}} </p>
+          </div>
+          <div class="row">
+            <p class="descripciones_web" id="alarm_description"> {{alarm.description}} </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-2">
+          <p> botones </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
