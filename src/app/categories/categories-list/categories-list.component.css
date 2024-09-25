@@ -46,5 +46,17 @@
 }
 
 ._btn_delete {
-  margin-top: 15px; 
+  margin-top: 15px;
+}
+
+.float_add {
+  position: fixed;
+  top: 85%;
+  right: 3%;
+}
+
+.btn-add {
+  width: 80px;
+  height: 80px;
+  background-image: url("/assets/images/add.png") !important;
 }

@@ -32,6 +32,18 @@ export class CategoriesListComponent implements OnInit {
       name: 'Salud',
       description: 'Actividades relacionadas con la salud',
       clock_style: '2',
+    },
+    {
+      id: 5,
+      name: 'Social',
+      description: 'Actividades para compartir con amigos',
+      clock_style: '3',
+    },
+    {
+      id: 6,
+      name: 'Estudio',
+      description: 'Actividades relacionadas con el estudio',
+      clock_style: '1',
     }
   ];
 
@@ -39,6 +51,10 @@ export class CategoriesListComponent implements OnInit {
 
   ngOnInit() {
     console.log('CategoriesListComponent initialized');
+  }
+
+  create () {
+    this.router.navigate(['/categories/create']);
   }
 
   edit () {
