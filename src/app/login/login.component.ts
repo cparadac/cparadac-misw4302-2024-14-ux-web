@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   public myAngularxQrCode: string = '';
   public qrCodeDownloadLink: SafeUrl = "";
+  state: string = 'default';
 
   constructor(
     private router: Router
@@ -25,6 +26,6 @@ export class LoginComponent implements OnInit {
   }
 
   onMouseEnter() {
-    this.router.navigate(['/alarms']);
+    this.router.navigate(['/login/loader']);
   }
 }

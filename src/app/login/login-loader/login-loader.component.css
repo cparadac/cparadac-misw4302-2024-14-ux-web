@@ -1,0 +1,72 @@
+.titulos_web {
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    color: var(--negro-app);
+}
+
+.subtitulos_web {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    color: var(--negro-app);
+}
+
+.descripciones_web {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--negro-app);
+}
+
+#titulo_login {
+    position: absolute;
+    left: 56px;
+    top: 50px;
+}
+
+#subtitulo_login {
+    position: absolute;
+    left: 56px;
+    top: 137px;
+}
+
+#instrucciones_login {
+    position: absolute;
+    left: 56px;
+    top: 318px;
+}
+
+#instruccion_login_listo {
+    position: absolute;
+    left: 247px;
+    top: 518px;
+}
+
+#qr_login {
+    width: 532px;
+    height: 532px;
+    position: absolute;
+    left: 1000px;
+    top: 175px;
+}
+
+#login_loader {
+    width: 532px;
+    height: 532px;
+    position: absolute;
+    left: 1000px;
+    top: 175px;
+}
+
+#verificando_loading_loader {
+    position: absolute;
+    left: 1190px;
+    top: 850px;
+}

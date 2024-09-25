@@ -1,0 +1,31 @@
+<div id = "wrapper">
+  <main class="container-fluid">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 col-md-6">
+                  <h1 class="titulos_web" id="titulo_login">UX Alarm APP</h1>
+                  <h2 class="subtitulos_web" id="subtitulo_login">Login con código QR</h2>
+                  <p class="descripciones_web" id="instrucciones_login">Ingresa a la aplicación móvil.<br><br>
+                      Selecciona la opción “escanear código QR”.<br><br>
+                      Escanea el código y</p>
+                  <h2 class="subtitulos_web" id="instruccion_login_listo">Listo!</h2>
+              </div>
+              <div class="col-12 col-md-6">
+                  <qrcode 
+                      id="qr_login" 
+                      (qrCodeURL)="onChangeURL($event)" 
+                      [qrdata]="myAngularxQrCode" 
+                      [width]="532"
+                      [colorDark]="'#1665c0'"
+                      [colorLight]="'#ffffff'"
+                      [errorCorrectionLevel]="'M'"
+                      [margin]="0"
+                  ></qrcode>
+                  <img [@rotatedState]="state" src="./../../../assets/images/Ellipse 8.png" id="login_loader">
+
+                  <p class="descripciones_web" id="verificando_loading_loader">Verificando...</p>
+              </div>
+          </div>
+      </div>        
+  </main>
+</div>
