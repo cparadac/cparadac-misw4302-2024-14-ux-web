@@ -16,10 +16,6 @@ export class ItemHourSelectorComponent implements OnInit {
 
   ngOnInit() {
     this.value = this.getValuesByType(this.itemValueType)[this.index];
-
-    if (this.itemValueType === 0) {
-      this.value = this.value + ' : ';
-    }
   }
 
   nextValue(itemValueType: number) {
@@ -27,10 +23,6 @@ export class ItemHourSelectorComponent implements OnInit {
 
     this.index = (this.index + 1) % values.length;
     this.value = values[this.index];
-
-    if (itemValueType === 0) {
-      this.value = this.value + ' : ';
-    }
   }
 
   prevValue(itemValueType: number) {
@@ -38,10 +30,6 @@ export class ItemHourSelectorComponent implements OnInit {
 
     this.index = (this.index - 1 + values.length) % values.length;
     this.value = values[this.index];
-
-    if (itemValueType === 0) {
-      this.value = this.value + ' : ';
-    }
   }
 
   getValuesByType(itemValueType: number) {

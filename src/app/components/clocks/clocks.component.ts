@@ -9,6 +9,7 @@ export class ClocksComponent implements OnInit {
 
   @Input() index: number = 0;
   @Input() style: string = '1';
+  @Input() size: string = 'small';
 
   constructor() { }
 
