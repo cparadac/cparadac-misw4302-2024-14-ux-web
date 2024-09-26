@@ -15,10 +15,10 @@ export class AlarmsCreateComponent implements OnInit {
   }
 
   save() {
-    this.router.navigate(['/categories']);
+    this.router.navigate(['/alarms']);
   }
 
   cancel() {
-    this.router.navigate(['/categories']);
+    this.router.navigate(['/alarms']);
   }
 }
