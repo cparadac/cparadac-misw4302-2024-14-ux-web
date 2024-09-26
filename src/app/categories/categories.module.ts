@@ -5,13 +5,15 @@ import { CategoriesListComponent } from './categories-list/categories-list.compo
 import { CategoriesCreateComponent } from './categories-create/categories-create.component';
 import { CategoriesEditComponent } from './categories-edit/categories-edit.component';
 import { CategoryRoutingModule } from './categories.routing.module';
+import { DialogModule } from "../components/dialog/dialog.module";
 
 @NgModule({
   imports: [
     CommonModule,
     CategoryRoutingModule,
-    ClocksModule
-  ],
+    ClocksModule,
+    DialogModule,
+],
   declarations: [CategoriesListComponent, CategoriesCreateComponent, CategoriesEditComponent],
 })
 export class CategoriesModule { }

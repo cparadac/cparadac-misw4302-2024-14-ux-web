@@ -60,4 +60,8 @@ export class CategoriesListComponent implements OnInit {
   edit () {
     this.router.navigate(['/categories/edit']);
   }
+
+  delete () {
+    console.log('Deleting category');
+  }
 }

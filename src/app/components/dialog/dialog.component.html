@@ -1,0 +1,30 @@
+<button class="btn btn-save _btn_delete" (click)="openModal(confirm)">
+  Eliminar
+</button>
+
+<ng-template #confirm>
+  <div class="confirm-box">
+    <div class="container-title">
+      <h4 class="title">{{ title }}</h4>
+    </div>
+    <div class="container-message">
+      <p class="warning-message">{{ warningMessage }}</p>
+    </div>
+    <div class="button-container">
+      <button
+        type="button"
+        class="btn btn-accept action-button-window"
+        (click)="accept()"
+      >
+        Aceptar
+      </button>
+      <button
+        type="button"
+        class="btn btn-cancel action-button-window"
+        (click)="decline()"
+      >
+        Cancelar
+      </button>
+    </div>
+  </div>
+</ng-template>

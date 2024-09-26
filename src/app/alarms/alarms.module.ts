@@ -5,12 +5,14 @@ import { AlarmsCreateComponent } from './alarms-create/alarms-create.component';
 import { AlarmsEditComponent } from './alarms-edit/alarms-edit.component';
 import { AlarmRoutingModule } from './alarms.routing.module';
 import { ClocksModule } from '../components/clocks/clocks.module';
+import { DialogModule } from "../components/dialog/dialog.module";
 
 @NgModule({
   imports: [
     CommonModule,
     AlarmRoutingModule,
-    ClocksModule
+    ClocksModule,
+    DialogModule,
   ],
   declarations: [AlarmsListComponent, AlarmsCreateComponent, AlarmsEditComponent],
 })

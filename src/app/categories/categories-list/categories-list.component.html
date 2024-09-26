@@ -38,7 +38,11 @@
         </div>
         <div class="col-12 col-md-2 align-self-center">
           <button class="btn btn-save" (click)="edit()">Editar</button>
-          <button class="btn btn-save _btn_delete">Eliminar</button>
+          <app-dialog
+            [title]="'Eliminar categoría'"
+            [warningMessage]="'¿Deseas eliminar esta categoria?'"
+            (acceptEvent)="delete()"
+          ></app-dialog>
         </div>
       </div>
     </div>

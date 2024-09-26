@@ -33,7 +33,11 @@
         </div>
         <div class="col-12 col-md-2">
             <button class="btn btn-edit" id="alarm_edit_button" (click)="edit()">Editar</button>
-            <button class="btn btn-delete" id="alarm_edit_button">Eliminar</button>
+            <app-dialog
+              [title]="'Eliminar alarma'"
+              [warningMessage]="'¿Deseas eliminar la alarma?'"
+              (acceptEvent)="delete()"
+            ></app-dialog>
         </div>
       </div>
 
@@ -70,7 +74,11 @@
         </div>
         <div class="col-12 col-md-2">
           <button class="btn btn-edit" id="alarm_edit_button" (click)="edit()">Editar</button>
-          <button class="btn btn-delete" id="alarm_edit_button">Eliminar</button>
+          <app-dialog
+              [title]="'Eliminar alarma'"
+              [warningMessage]="'¿Deseas eliminar la alarma?'"
+              (acceptEvent)="delete()"
+            ></app-dialog>
         </div>
       </div>
     </div>

@@ -67,4 +67,8 @@ validateDay(day:any, alarmDays: string[]) {
   edit () {
     this.router.navigate(['/alarms/edit']);
   }
+
+  delete () {
+    console.log('Deleting alarm');
+  }
 }
