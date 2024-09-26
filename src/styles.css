@@ -38,3 +38,7 @@ body {
     max-width: 560px !important;
     background-color: transparent !important;
 }
+
+.switch:hover {
+    cursor: pointer;
+}
