@@ -6,6 +6,8 @@ import { AlarmsEditComponent } from './alarms-edit/alarms-edit.component';
 import { AlarmRoutingModule } from './alarms.routing.module';
 import { ClocksModule } from '../components/clocks/clocks.module';
 import { DialogModule } from "../components/dialog/dialog.module";
+import { ItemHourSelectorModule } from '../components/item-hour-selector/item-hour-selector.module';
+
 
 @NgModule({
   imports: [
@@ -13,6 +15,7 @@ import { DialogModule } from "../components/dialog/dialog.module";
     AlarmRoutingModule,
     ClocksModule,
     DialogModule,
+    ItemHourSelectorModule
   ],
   declarations: [AlarmsListComponent, AlarmsCreateComponent, AlarmsEditComponent],
 })
