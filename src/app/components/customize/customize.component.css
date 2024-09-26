@@ -71,6 +71,7 @@
   width: 30px;
   height: 30px;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .form-check-label {
@@ -147,4 +148,9 @@
 
 .colors {
   cursor: pointer;
+}
+
+.switch-item {
+  display: flex;
+  justify-content: center;
 }

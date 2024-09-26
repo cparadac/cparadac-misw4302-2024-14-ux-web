@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class AlarmsEditComponent implements OnInit {
 
+  public isOpenCustom = false;
+
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -20,5 +22,9 @@ export class AlarmsEditComponent implements OnInit {
 
   cancel() {
     this.router.navigate(['/alarms']);
+  }
+
+  openCustom () {
+    this.isOpenCustom = !this.isOpenCustom;
   }
 }

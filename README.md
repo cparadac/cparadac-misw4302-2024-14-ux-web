@@ -2,26 +2,41 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
 
-## Development server
+## Integrantes
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+| **Name**                        | **Email**                   |
+|---------------------------------|-----------------------------|
+| Cristian Eduardo Parada Criales | c.paradac@uniandes.edu.co   |
+| Cristian Camilo Zapata Torres   | c.zapatat@uniandes.edu.co   |
 
-## Code scaffolding
+## Distribución Trabajo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Trabajamos bajo la modalidad de TrunkBase, lo cual es una unica Rama (main) que fuimos nutriendo con commits, a continuación se adjuntan capturas de commits por cada integrante. [Commits](https://github.com/cparadac/cparadac-misw4302-2024-14-ux-web/commits/main/)
 
-## Build
+## Requirements
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. NodeJS: **v18.18.2**
+2. NPM: **v9.8.1**
+3. Angular Cli: **17.3.9**
 
-## Running unit tests
+## Steps to Run
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1.
 
-## Running end-to-end tests
+```bash
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2.
 
-## Further help
+```bash
+npm run build
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3.
+
+```bash
+npm start
+```
+
+4. Open your browser on [http://localhost:4200](http://localhost:4200)

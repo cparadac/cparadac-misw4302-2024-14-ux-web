@@ -113,6 +113,19 @@
     border-radius: 100px;
     margin-top: 24px;
     margin-left: 77%;
-    width: 357px;
+    width: 370px;
     height: 57px;
   }
+
+.custom-float {
+  position: fixed;
+  right: -85px;
+}
+
+.custom-internal {
+  width: 800px;
+  margin-top: 20px;
+  background: transparent !important;
+  border: none;
+  border-left: 2px solid var(--azul-oscuro-app) !important;
+}

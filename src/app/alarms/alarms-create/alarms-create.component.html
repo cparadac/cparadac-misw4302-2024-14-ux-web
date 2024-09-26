@@ -1,35 +1,57 @@
 <div class="container text-center">
-    <div class="row justify-content-center">
-        <h1 class="titulos_web">Crear Alarma Rápida</h1>
-    </div>
-    <div class="row input-container-right">
-      <button type="button" class="btn btn-custom-alarm" (click)="''">Personalizar Alarma</button>
-    </div>
-      <div class="row justify-content-center">
-      <div class="row justify-content-left">
-        <div class="col-auto text-center item-config">
-            <app-clocks [index]="0" size="big" id="clock_selector"></app-clocks>
-        </div>
-        <div class="col-auto text-center item-config" id="hour-selector">
-            <app-item-hour-selector id="item_hour_selector" [index]="0" [itemValueType]="0"></app-item-hour-selector>
-            <h1 class="titulos_web" id="item_hour_separator">:</h1>
-            <app-item-hour-selector id="item_minutes_selector" [index]="0" [itemValueType]="1"></app-item-hour-selector>
-            <app-item-hour-selector id="item_seconds_selector" [index]="0" [itemValueType]="2"></app-item-hour-selector>
-        </div>
+  <div class="row justify-content-center">
+    <h1 class="titulos_web">Crear Alarma Rápida</h1>
+  </div>
+  <div class="row input-container-right">
+    <button type="button" class="btn btn-custom-alarm" (click)="openCustom()" data-bs-toggle="collapse" data-bs-target="#customAlarmOptions" aria-expanded="false" aria-controls="customAlarmOptions">
+      {{ isOpenCustom ? 'Cancelar Personalización' : 'Personalizar Alarma' }}
+    </button>
+  </div>
+  <div class="row justify-content-center">
+    <div class="row justify-content-left">
+      <div class="col-auto text-center item-config">
+        <app-clocks [index]="0" size="big" id="clock_selector"></app-clocks>
       </div>
-    </div>
-  
-    <div class="row justify-content-center row_main_form">
-      <div class="col-auto">
-        <div class="row row_form">
-          <div class="col-6">
-            <button type="button" class="btn btn-save" (click)="save()">Guardar</button>
-          </div>
-          <div class="col-6">
-          <button type="button" class="btn btn-cancel" (click)="cancel()">Cancelar</button>
-          </div>
+      <div class="col-auto text-center item-config" id="hour-selector">
+        <app-item-hour-selector
+          id="item_hour_selector"
+          [index]="0"
+          [itemValueType]="0"
+        ></app-item-hour-selector>
+        <h1 class="titulos_web" id="item_hour_separator">:</h1>
+        <app-item-hour-selector
+          id="item_minutes_selector"
+          [index]="0"
+          [itemValueType]="1"
+        ></app-item-hour-selector>
+        <app-item-hour-selector
+          id="item_seconds_selector"
+          [index]="0"
+          [itemValueType]="2"
+        ></app-item-hour-selector>
+      </div>
+      <div class="col-auto collapse collapse-horizontal custom-float" id="customAlarmOptions">
+        <div class="card card-body custom-internal">
+          <app-customize></app-customize>
         </div>
       </div>
     </div>
   </div>
-  
+
+  <div class="row justify-content-center row_main_form">
+    <div class="col-auto">
+      <div class="row row_form">
+        <div class="col-6">
+          <button type="button" class="btn btn-save" (click)="save()">
+            Guardar
+          </button>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-cancel" (click)="cancel()">
+            Cancelar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
