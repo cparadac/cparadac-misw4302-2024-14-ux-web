@@ -1,0 +1,37 @@
+.reloj_carousel {
+    width: 200px !important;
+    height: 145px !important;
+    flex-shrink: 0 !important;
+  }
+  
+.titulos_web {
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    color: var(--negro-app);
+    margin-left: 10px;
+}
+
+.carousel-control-prev-icon {
+    background-color: transparent;
+    background-image: url('/assets/images/arrow_up.png') !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+  
+.carousel-control-next-icon {
+    background-color: transparent;
+    background-image: url('/assets/images/arrow_down.png') !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.btn-arrow-up, .btn-arrow-down {
+    border: 0;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px
+}
